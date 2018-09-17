@@ -31,7 +31,7 @@ canvas = np.zeros((500, 500, 3), dtype="uint8")
 # tuple to represent white color in BGR
 white = (255, 255, 255)
 
-# draw multiple white circle with increasing radius in the image
+# draw multiple white circle with random radius in the image
 for radius in range(0, 500, 25):
     cv2.circle(canvas, (centerX, centerY), radius, white, 2)
 
@@ -55,5 +55,3 @@ for i in range(0, 25):
 
 cv2.imshow("Random color cirle", canvas)
 cv2.waitKey(0)
-
-cv2.imwrite("Random colors.jpeg", canvas)
