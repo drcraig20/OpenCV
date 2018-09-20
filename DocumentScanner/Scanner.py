@@ -1,6 +1,5 @@
 import sys
-sys.path.insert(0, "../Transformation")
-from transform import four_point_transform
+from imutils.perspective import four_point_transform
 import numpy as np
 from skimage.filters import threshold_local
 import argparse
